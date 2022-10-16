@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.ssafy.happyhouse.model.mapper.HouseMapMapper">
+
+	<select id="getSido" resultType="sidoGugunDongCodeDto">
+		select left(sidoCode,2)
+		sidoCode, sidoName
+		from sidocode
+		order by sidoCode
+	</select>
+
+	<select id="getGugunInSido" parameterType="string"
+		resultType="sidoGugunDongCodeDto">
+		select left(gugunCode,5) gugunCode, gugunName
+		from guguncode
+		where left(gugunCode,2) = #{sido}
+		order by gugunCode
+	</select>
+
+	<select id="getDongInGugun" parameterType="string"
+		resultType="sidoGugunDongCodeDto">
+		select distinct d.dongName, d.dongCode
+		from dongcode d join
+		houseinfo i on d.dongCode = i.dongCode
+		where left(d.dongCode, 5) =
+		#{gugun} and d.dongName is not null
+		order by d.dongName
+	</select>
+
+	<select id="getAptInDong" parameterType="searchDto"
+		resultType="houseInfoDto">
+		select info.buildyear, dong.sidoName, dong.gugunName,
+		dong.dongName, deal.area, deal.floor, info.apartmentName,
+		info.roadName, info.buildYear, info.lng, info.lat, deal.dealYear,
+		deal.dealMonth, deal.dealDay, deal.dealAmount
+		from houseinfo info join
+		housedeal deal on info.aptCode = deal.aptCode
+		join dongcode dong on
+		info.dongCode = dong.dongCode
+		where info.dongCode = #{dong}
+		<if test="year != null">and deal.dealYear = #{year}</if>
+		<if test="minPrice != null">and cast(replace(deal.dealAmount, ',', '') as unsigned) >=
+			#{minPrice}
+		</if>
+		<if test="maxPrice != null">and cast(replace(deal.dealAmount, ',', '') as unsigned) <![CDATA[<=]]>
+			#{maxPrice}
+		</if>
+		<![CDATA[ ]]>
+		order by info.aptCode
+	</select>
+
+	<select id="getAptDetail" parameterType="long"
+		resultType="HouseDetailDto">
+		select info.buildyear, dong.sidoName, dong.gugunName,
+		dong.dongName, deal.area, deal.floor, info.apartmentName,
+		info.roadName, info.buildYear, info.lng, info.lat, deal.dealYear,
+		deal.dealMonth, deal.dealDay, deal.dealAmount
+		from houseinfo info join
+		housedeal deal on info.aptCode = deal.aptCode
+		join dongcode dong on
+		info.dongCode = dong.dongCode where deal.no = #{no}
+
+	</select>
+
+</mapper>
