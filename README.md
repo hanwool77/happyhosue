@@ -9,36 +9,31 @@
 
 
 # 기능 아키텍쳐 구성
-
----
-
-![기능아키텍쳐.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EA%25B8%25B0%25EB%258A%25A5%25EC%2595%2584%25ED%2582%25A4%25ED%2585%258D%25EC%25B3%2590.png)
+![기능아키텍쳐.png](./asset/mainfeature.png)
 
 # 실행화면
 
----
-
 ### ▶️ 메인페이지
 
-![메인페이지-채널톡.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%2580-%25EC%25B1%2584%25EB%2584%2590%25ED%2586%25A1.png)
+![메인페이지-채널톡.png](./asset/main.png)
 
 ### ▶️ 메인페이지 - NavBar
 
 - 회원과 비회원의 서비스 이용 범위 차별화
 - 로그인 여부 확인을 통해 사용자 편의성 개선
 
-![메인페이지2.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EB%25A9%2594%25EC%259D%25B8%25ED%258E%2598%25EC%259D%25B4%25EC%25A7%25802.png)
+![메인페이지2.png](./asset/main_navbar.png)
 
 ### ▶️ 로그인
 
-![로그인.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EB%25A1%259C%25EA%25B7%25B8%25EC%259D%25B8.png)
+![로그인.png](./asset/signin.png)
 
 ### ▶️ 회원가입
 
 - 프론트 엔드 → 공백처리와 같은 유효성 처리
 - 백 엔드 → 중복 처리와 같은 유효성 처리
     
-    ![회원가입.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25ED%259A%258C%25EC%259B%2590%25EA%25B0%2580%25EC%259E%2585.png)
+    ![회원가입.png](./asset/signup.png)
     
 
 ### ▶️ 회원 정보 수정 및 삭제
@@ -46,7 +41,7 @@
 - 알림창을 활용한 회원 탈퇴
 - 회원 정보 수정 시 아이디 수정 X
 
-![회원수정및삭제.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25ED%259A%258C%25EC%259B%2590%25EC%2588%2598%25EC%25A0%2595%25EB%25B0%258F%25EC%2582%25AD%25EC%25A0%259C.png)
+![회원수정및삭제.png](./asset/profile.png)
 
 ### ▶️ 아파트 거래 정보
 
@@ -54,54 +49,54 @@
 - 카카오 맵 API를 활용한 지도 표시
 - 관심 지역 선택 가능
 
-![아파트거래정보2.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EC%2595%2584%25ED%258C%258C%25ED%258A%25B8%25EA%25B1%25B0%25EB%259E%2598%25EC%25A0%2595%25EB%25B3%25B42.png)
+![아파트거래정보2.png](./asset/apartmain.png)
 
 - ▶️ **공공데이터를 통한 시 조회**
 
-![아파트거래-시.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EC%2595%2584%25ED%258C%258C%25ED%258A%25B8%25EA%25B1%25B0%25EB%259E%2598-%25EC%258B%259C.png)
+![아파트거래-시.png](./asset/si.png)
 
 - ▶️ **공공데이터를 통한 군,구 조회**
 
-![아파트거래정보-구군.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EC%2595%2584%25ED%258C%258C%25ED%258A%25B8%25EA%25B1%25B0%25EB%259E%2598%25EC%25A0%2595%25EB%25B3%25B4-%25EA%25B5%25AC%25EA%25B5%25B0.png)
+![아파트거래정보-구군.png](./asset/gugun.png)
 
 - ▶️ **공공데이터를 통한 동 조회**
 
-![아파트거래정보-동.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EC%2595%2584%25ED%258C%258C%25ED%258A%25B8%25EA%25B1%25B0%25EB%259E%2598%25EC%25A0%2595%25EB%25B3%25B4-%25EB%258F%2599.png)
+![아파트거래정보-동.png](./asset/dong.png)
 
 - ▶️ **아파트 거래 조회**
     
-    ![아파트거래정보-최초.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EC%2595%2584%25ED%258C%258C%25ED%258A%25B8%25EA%25B1%25B0%25EB%259E%2598%25EC%25A0%2595%25EB%25B3%25B4-%25EC%25B5%259C%25EC%25B4%2588.png)
+    ![아파트거래정보-최초.png](./asset/apartsearch.png)
     
 - ▶️ **아파트 거래 상세 정보 조회**
     
-    ![아파트거래-상세정보.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EC%2595%2584%25ED%258C%258C%25ED%258A%25B8%25EA%25B1%25B0%25EB%259E%2598-%25EC%2583%2581%25EC%2584%25B8%25EC%25A0%2595%25EB%25B3%25B4.png)
+    ![아파트거래-상세정보.png](./asset/apart.png)
     
 
 ### ▶️ 공지사항
 
 - Hide & Show 방식의 공지사항 보기
 
-![공지사항.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EA%25B3%25B5%25EC%25A7%2580%25EC%2582%25AC%25ED%2595%25AD.png)
+![공지사항.png](./asset/notice.png)
 
 ### ▶️ Q&A
 
 - Pagination 방식의 게시글 모아보기
 
-![Qna.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/Qna.png)
+![Qna.png](./asset/Qna.png)
 
 ### ▶️ Q&A 상세보기
 
 - 게시글 상세보기
 - 게시글 수정 및 삭제 가능
 
-![Qna상세보기.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/Qna%25EC%2583%2581%25EC%2584%25B8%25EB%25B3%25B4%25EA%25B8%25B0.png)
+![Qna상세보기.png](./asset/qnadetail.png)
 
 ### ▶️ Q&A 등록
 
-![Qna삭제 및 수정.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/Qna%25EC%2582%25AD%25EC%25A0%259C_%25EB%25B0%258F_%25EC%2588%2598%25EC%25A0%2595.png)
+![Qna삭제 및 수정.png](./asset/qnasubmit.png)
 
 ### ▶️ 관심지역
 
 - 관심 지역 설정을 통해 특정 매물과 관련된 정보를 빠르게 확인 가능
 
-![관심지역확인.png](HappyHouse%20f3de8ea32bf94fc8b39e4d0d05826b86/%25EA%25B4%2580%25EC%258B%25AC%25EC%25A7%2580%25EC%2597%25AD%25ED%2599%2595%25EC%259D%25B8.png)
+![관심지역확인.png](./asset/fav.png)
